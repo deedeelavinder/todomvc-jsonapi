@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  title: first
   order: 1
   completed: false
 
 two:
-  title: MyString
-  order: 1
-  completed: false
+  title: second
+  order: 2
+  completed: true
