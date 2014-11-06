@@ -12,7 +12,7 @@ class API::V1::TodosController < ApplicationController
   def create
     @todo = Todo.new(todo_params)
     if @todo.save
-      render json: @todo, status: :created, location: api_v1_todo_path(@todo)
+      render json: [@todo], status: :created, location: api_v1_todo_path(@todo)
     else
       render json: {errors: @todo.errors}, status: :bad_request
     end
@@ -22,7 +22,7 @@ class API::V1::TodosController < ApplicationController
     @todo = Todo.find(params[:id])
 
     if @todo.update(todo_params)
-      render json: @todo, status: :ok
+      render json: [@todo], status: :ok
     else
       render json: {errors: @todo.errors}, status: :bad_request
     end
