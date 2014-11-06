@@ -10,7 +10,7 @@ gem 'spring', :group => :development
 
 gem 'sqlite3'
 
-
+gem 'pry-byebug'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
